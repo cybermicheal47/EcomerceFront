@@ -1,5 +1,15 @@
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import ProductList from "./pages/ProductList";
+import ProductPage from "./pages/ProductPage";
+import Register from "./pages/Register";
+
 const App = () => {
-  return <div>Hello world!</div>;
+  return (
+    <div>
+      <Login />
+    </div>
+  );
 };
 
 export default App;
