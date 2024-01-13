@@ -8,11 +8,14 @@ import {
 } from "@mui/icons-material";
 import styled from "styled-components";
 import payment from "../images/payment.png";
+import { Mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
 
   padding: 20px;
+
+  ${Mobile({ flexDirection: "column", gap: "20px" })}
 `;
 const Left = styled.div`
   flex: 1;
@@ -21,6 +24,7 @@ const Left = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${Mobile({ display: "none" })}
 `;
 const Title = styled.h3`
   text-align: center;
@@ -51,9 +55,13 @@ const ContactItem = styled.div`
 const Payment = styled.img`
   width: 50%;
   margin-top: -50px;
+
+  ${Mobile({ marginTop: "-20px" })}
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+  text-align: center;
+`;
 const Desc = styled.p`
   margin: 20px 0px;
 `;

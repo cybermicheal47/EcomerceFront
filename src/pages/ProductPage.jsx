@@ -6,12 +6,14 @@ import NewsLetter from "../components/NewsLetter";
 import Footer from "../components/Footer";
 import pic from "../images/a.jpg";
 import { Add, Remove } from "@mui/icons-material";
+import { Mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
+  ${Mobile({ flexDirection: "column", padding: "10px" })}
 `;
 
 const ImgContainer = styled.div`
@@ -20,7 +22,9 @@ const ImgContainer = styled.div`
 
 const Image = styled.img`
   height: 90vh;
+  width: 100%;
   object-fit: cover;
+  ${Mobile({ height: "40vh" })}
 `;
 
 const InfoContainer = styled.div`
@@ -44,6 +48,7 @@ const FilterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 30px 0px;
+  ${Mobile({ width: "100%" })}
 `;
 const Filter = styled.div`
   display: flex;
@@ -72,6 +77,7 @@ const AddContainer = styled.div`
   align-items: center;
   width: 50%;
   justify-content: space-between;
+  ${Mobile({ width: "100%" })}
 `;
 const AmountContainer = styled.div`
   display: flex;
