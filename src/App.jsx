@@ -1,17 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Navbarr from "./components/Navbar/Navbarr";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ProductList from "./pages/ProductList";
 import ProductPage from "./pages/ProductPage";
 import Cart from "./pages/Cart";
 
+import Navbarx from "./components/Navbar/Navbarx";
+
 const App = () => {
   return (
     <Router>
-      <Navbarr />
+      <Navbarx />
+      {/* files that doesn't need route */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<Login />} />
