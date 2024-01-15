@@ -113,7 +113,6 @@ const Button = styled.button`
 const ProductPage = () => {
   return (
     <Container>
-      <Navbar />
       <Announcement />
       <Wrapper>
         <ImgContainer>

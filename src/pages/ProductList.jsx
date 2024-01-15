@@ -36,9 +36,8 @@ function ProductList() {
   return (
     <Container>
       {" "}
-      <Navbar />
       <Announcement />
-      <Title> Dresses</Title>
+      <Title> </Title>
       <FilterContainer>
         <Filter>
           <FilterText> Sort Products:</FilterText>

@@ -16,6 +16,7 @@ const Container = styled.div`
 
   position: relative;
   overflow: hidden;
+  margin-top: 16px;
   ${Mobile({ display: "none" })}
 `;
 

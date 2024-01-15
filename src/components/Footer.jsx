@@ -45,7 +45,6 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
-  dis
 `;
 const ContactItem = styled.div`
   display: flex;

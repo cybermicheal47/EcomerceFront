@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import pic from "../images/a.jpg";
+import picc from "../images/b.jpg";
 import { Add, Remove } from "@mui/icons-material";
 import { Mobile } from "../responsive";
 
@@ -69,7 +70,9 @@ const ProductDetail = styled.div`
 `;
 
 const Image = styled.img`
-  width: 200px;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 const ProductName = styled.span``;
@@ -159,7 +162,6 @@ const SummaryButton = styled.button`
 function Cart() {
   return (
     <Container>
-      <Navbar />
       <Announcement />
 
       <Wrapper>
@@ -168,7 +170,7 @@ function Cart() {
         <Top>
           <Topbutton> Continue Shopping</Topbutton>
           <TopTexts>
-            <TopText> Shopping Bag (2) </TopText>
+            <TopText> Cart (4) </TopText>
             <TopText>Your WishList(0) </TopText>
           </TopTexts>
           <Topbutton type="filled"> CheckOut</Topbutton>
@@ -182,14 +184,14 @@ function Cart() {
                 <Image src={pic} />
                 <Details>
                   <ProductName>
-                    <b>Product:</b> JESSIE THUNDER SHOES
+                    <b>Product:</b> Great Shoe
                   </ProductName>
                   <ProductId>
-                    <b>ID:</b> 93813718293
+                    <b>ID:</b> 12345322
                   </ProductId>
-                  <ProductColor color="black" />
+                  <ProductColor color="blue" />
                   <ProductSize>
-                    <b>Size:</b> 37.5
+                    <b>Size:</b> 45
                   </ProductSize>
                 </Details>
               </ProductDetail>
@@ -199,23 +201,23 @@ function Cart() {
                   <ProductAmount>2</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>$ 30</ProductPrice>
+                <ProductPrice>$ 89</ProductPrice>
               </PriceDetail>
             </Product>
             <Hr />
             <Product>
               <ProductDetail>
-                <Image src={pic} />
+                <Image src={picc} />
                 <Details>
                   <ProductName>
-                    <b>Product:</b> HAKURA T-SHIRT
+                    <b>Product:</b> Nike Airforce Shoe
                   </ProductName>
                   <ProductId>
-                    <b>ID:</b> 93813718293
+                    <b>ID:</b> 111223333
                   </ProductId>
-                  <ProductColor color="gray" />
+                  <ProductColor color="red" />
                   <ProductSize>
-                    <b>Size:</b> M
+                    <b>Size:</b> 45
                   </ProductSize>
                 </Details>
               </ProductDetail>
@@ -225,7 +227,7 @@ function Cart() {
                   <ProductAmount>1</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>$ 20</ProductPrice>
+                <ProductPrice>$ 80</ProductPrice>
               </PriceDetail>
             </Product>
           </Info>
@@ -234,22 +236,22 @@ function Cart() {
 
             <SummaryItem>
               <SummaryItemText> SubTotal : </SummaryItemText>
-              <SummaryItemPrice> $80</SummaryItemPrice>
+              <SummaryItemPrice> $169</SummaryItemPrice>
             </SummaryItem>
 
             <SummaryItem>
               <SummaryItemText> Estimated Shipping: </SummaryItemText>
-              <SummaryItemPrice> $80</SummaryItemPrice>
+              <SummaryItemPrice> $50</SummaryItemPrice>
             </SummaryItem>
 
             <SummaryItem>
               <SummaryItemText> Shipping Discount:</SummaryItemText>
-              <SummaryItemPrice> $ -5.80</SummaryItemPrice>
+              <SummaryItemPrice> $-6</SummaryItemPrice>
             </SummaryItem>
 
             <SummaryItem type="total">
               <SummaryItemText> Total</SummaryItemText>
-              <SummaryItemPrice> $80</SummaryItemPrice>
+              <SummaryItemPrice> $213</SummaryItemPrice>
             </SummaryItem>
 
             <SummaryButton>Checkout Now</SummaryButton>
